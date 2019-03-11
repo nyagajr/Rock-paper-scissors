@@ -11,8 +11,8 @@ function computerPlay() {
   return selection[randomInt];
 }
 
-function playerPlay(e) {
-  let selection = e.target.value;
+function playerPlay(enter) {
+  let selection = enter.target.value;
   return selection;
 }
 
@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === 'rock') {
     if (computerSelection.toLowerCase() === 'scissors') {
       playerScore++;
-      return `Computer selected scissors \n You win this round! ${playerSelection} beats ${computerSelection}`;
+      return `Computer selected scissors \n You won this round! ${playerSelection} beats ${computerSelection}`;
 
     }
 
@@ -73,7 +73,7 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-function getWinner() {
+function Winner() {
   if (playerScore > computerScore) {
     return `Congratulations You have won, Your score is ${playerScore} and computer score is ${computerScore}`;
   } else if (playerScore < computerScore) {
