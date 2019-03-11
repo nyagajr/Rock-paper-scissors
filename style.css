@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  font-family: arial;
+  color: green;
+}
+
+
+#buttons {
+  width: 100%;
+  flex: 3;
+}
+
+#buttons button {
+
+  background: #003300;
+  padding: 0 1rem 0;
+  color: white;
+  border: none;
+}
+h1{
+  text-align: center;
+}
